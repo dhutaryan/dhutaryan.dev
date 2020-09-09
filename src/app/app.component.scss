@@ -1,0 +1,11 @@
+@import 'mixins';
+
+:host {
+  @include flexContainer();
+  height: 100%;
+
+  .app {
+    @include flexContainer();
+    margin: 50px auto 100px;
+  }
+}
