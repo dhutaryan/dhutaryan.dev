@@ -3,10 +3,9 @@
 
 :host {
   @include flexContainer();
-  height: 100%;
 
-  .app {
+  .experience-info {
     @include flexContainer();
-    background-color: $alto;
+    padding: 16px;
   }
 }
