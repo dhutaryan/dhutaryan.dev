@@ -1,0 +1,11 @@
+@import 'variables';
+
+:host {
+  h3 {
+    margin: 0;
+    padding-bottom: 4px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    border-bottom: 2px solid $silver-chalice;
+  }
+}
