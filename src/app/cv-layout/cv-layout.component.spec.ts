@@ -1,4 +1,4 @@
-import { async, ComponentFixture, TestBed } from '@angular/core/testing';
+import { ComponentFixture, TestBed, waitForAsync } from '@angular/core/testing';
 
 import { CvLayoutComponent } from './cv-layout.component';
 
@@ -6,7 +6,7 @@ describe('CvLayoutComponent', () => {
   let component: CvLayoutComponent;
   let fixture: ComponentFixture<CvLayoutComponent>;
 
-  beforeEach(async(() => {
+  beforeEach(waitForAsync(() => {
     TestBed.configureTestingModule({
       declarations: [ CvLayoutComponent ]
     })
