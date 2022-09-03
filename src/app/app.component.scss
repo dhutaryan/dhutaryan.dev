@@ -1,12 +1,14 @@
 @import 'mixins';
-@import 'variables';
 
 :host {
-  @include flexContainer();
+  @include flex-container;
   height: 100%;
+}
 
-  .app {
-    @include flexContainer();
-    background-color: $alto;
-  }
+.app {
+  @include flex-container;
+  max-width: 60rem;
+  width: 100%;
+  margin: 0 auto;
+  padding: 1.5rem 1rem;
 }
