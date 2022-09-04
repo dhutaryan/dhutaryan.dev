@@ -1,0 +1,8 @@
+a {
+  color: var(--dg-primary);
+  text-decoration: none;
+
+  &:hover {
+    text-decoration: underline;
+  }
+}

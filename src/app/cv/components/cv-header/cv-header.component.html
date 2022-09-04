@@ -1,0 +1,29 @@
+<header fxLayout="row" fxLayoutAlign="space-between center">
+  <div>
+    <h1 class="dg-primary-text">Dzmitry Hutaryan</h1>
+    <h4>Front-end developer</h4>
+  </div>
+
+  <div fxLayout="column" fxLayoutAlign="start end">
+    <a
+      [class.cv-header-hidden-link]="!isEmailShown"
+      [href]="'mailto:' + email"
+      (click)="showEmail($event)"
+    >
+      {{ email }}
+      <ng-template [ngIf]="!isEmailShown">
+        <span class="cv-header-skeleton" [style.left.px]="leftShift"></span>
+      </ng-template>
+    </a>
+    <a
+      [class.cv-header-hidden-link]="!isPhoneShown"
+      [href]="phoneHref"
+      (click)="showPhone($event)"
+    >
+      {{ phoneWithMask }}
+      <ng-template [ngIf]="!isPhoneShown">
+        <span class="cv-header-skeleton" [style.left.px]="leftShift"></span>
+      </ng-template>
+    </a>
+  </div>
+</header>

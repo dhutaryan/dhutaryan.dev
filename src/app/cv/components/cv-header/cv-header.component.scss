@@ -1,0 +1,32 @@
+header {
+  padding-bottom: 1rem;
+  border-bottom: 1px solid var(--dg-divider);
+}
+
+h1,
+h4 {
+  margin: 0;
+}
+
+h4 {
+  text-transform: uppercase;
+}
+
+a {
+  position: relative;
+  line-height: 1.5rem;
+}
+
+.cv-header-hidden-link {
+  text-decoration: none;
+}
+
+.cv-header-skeleton {
+  display: block;
+  position: absolute;
+  top: 2px;
+  right: 0;
+  bottom: 2px;
+  background-color: var(--dg-divider);
+  border-radius: 0.5rem;
+}
