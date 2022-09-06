@@ -6,4 +6,7 @@ import { ChangeDetectionStrategy, Component } from '@angular/core';
   styleUrls: ['./cv.component.scss'],
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
-export class CvComponent {}
+export class CvComponent {
+  public email = 'dmitry@example.com';
+  public phone = '+222 (22) 222-22-22';
+}

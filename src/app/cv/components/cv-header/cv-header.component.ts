@@ -1,4 +1,9 @@
-import { ChangeDetectionStrategy, Component, OnInit } from '@angular/core';
+import {
+  ChangeDetectionStrategy,
+  Component,
+  Input,
+  OnInit,
+} from '@angular/core';
 
 const AVERAGE_CHAR_WIDTH = 8.5;
 const SHOW_CHARS = 5;
@@ -11,20 +16,16 @@ const FAKE_PHONE = '+111 (11) 111-11-11';
   styleUrls: ['./cv-header.component.scss'],
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
-export class CvHeaderComponent implements OnInit {
+export class CvHeaderComponent {
+  @Input() realEmail: string = '';
+  @Input() realphone: string = '';
+
   public email = FAKE_EMAIL;
   public phoneWithMask = FAKE_PHONE;
   public phoneHref = '';
   public isEmailShown = false;
   public isPhoneShown = false;
-  public leftShift = 0;
-
-  private realEmail = 'dmitry@example.com';
-  private realphone = '+222 (22) 222-22-22';
-
-  public ngOnInit(): void {
-    this.leftShift = this.getLeftShift();
-  }
+  public leftShift = AVERAGE_CHAR_WIDTH * SHOW_CHARS;
 
   public showEmail(event: MouseEvent): void {
     if (this.isEmailShown) {
@@ -45,9 +46,5 @@ export class CvHeaderComponent implements OnInit {
     this.isPhoneShown = true;
     this.phoneWithMask = this.realphone;
     this.phoneHref = 'tel:+' + this.realphone.replace(/\D/g, '');
-  }
-
-  private getLeftShift(): number {
-    return AVERAGE_CHAR_WIDTH * SHOW_CHARS;
   }
 }
