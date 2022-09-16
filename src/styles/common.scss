@@ -13,3 +13,9 @@ body {
 .dg-primary-text {
   color: var(--dg-primary);
 }
+
+.dg-section-header {
+  margin-bottom: 1rem;
+  color: var(--dg-primary);
+  text-transform: uppercase;
+}

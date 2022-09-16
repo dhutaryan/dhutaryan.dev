@@ -1,0 +1,20 @@
+<h6 class="dg-section-header">Experience</h6>
+
+<ng-template ngFor let-experience [ngForOf]="experience">
+  <div class="company-block">
+    <h6>
+      {{ experience.companyName }} /
+      <span class="position">{{ experience.role }}</span>
+    </h6>
+    <span class="work-dates">{{ experience.from }} - {{ experience.to }}</span>
+    <ul>
+      <ng-template
+        ngFor
+        let-responsibility
+        [ngForOf]="experience.responsibilities"
+      >
+        <li>{{ responsibility }}</li>
+      </ng-template>
+    </ul>
+  </div>
+</ng-template>
