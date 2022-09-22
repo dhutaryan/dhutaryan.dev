@@ -5,25 +5,6 @@
   </div>
 
   <div fxLayout="column" fxLayoutAlign="start end">
-    <a
-      [class.cv-header-hidden-link]="!isEmailShown"
-      [href]="'mailto:' + email"
-      (click)="showEmail($event)"
-    >
-      {{ email }}
-      <ng-template [ngIf]="!isEmailShown">
-        <span class="cv-header-skeleton" [style.left.px]="leftShift"></span>
-      </ng-template>
-    </a>
-    <a
-      [class.cv-header-hidden-link]="!isPhoneShown"
-      [href]="phoneHref"
-      (click)="showPhone($event)"
-    >
-      {{ phoneWithMask }}
-      <ng-template [ngIf]="!isPhoneShown">
-        <span class="cv-header-skeleton" [style.left.px]="leftShift"></span>
-      </ng-template>
-    </a>
+    <a [href]="'mailto:' + email">{{ email }}</a>
   </div>
 </header>

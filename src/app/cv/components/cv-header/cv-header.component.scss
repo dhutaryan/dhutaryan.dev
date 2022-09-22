@@ -6,22 +6,3 @@ header {
 h6 {
   text-transform: uppercase;
 }
-
-a {
-  position: relative;
-  line-height: 1.5rem;
-}
-
-.cv-header-hidden-link {
-  text-decoration: none;
-}
-
-.cv-header-skeleton {
-  display: block;
-  position: absolute;
-  top: 2px;
-  right: 0;
-  bottom: 2px;
-  background-color: var(--dg-divider);
-  border-radius: 0.5rem;
-}
