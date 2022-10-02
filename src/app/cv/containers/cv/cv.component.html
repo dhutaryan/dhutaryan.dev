@@ -1,2 +1,12 @@
 <dg-cv-header></dg-cv-header>
-<dg-cv-experience [experience]="experience$ | async"></dg-cv-experience>
+
+<div
+  class="main-content"
+  fxLayout="row"
+  fxLayout.lt-md="column-reverse"
+  fxLayoutGap="2rem"
+>
+  <dg-cv-skills fxFlex="30%" [skills]="skills$ | async"></dg-cv-skills>
+  <hr />
+  <dg-cv-experience [experience]="experience$ | async"></dg-cv-experience>
+</div>

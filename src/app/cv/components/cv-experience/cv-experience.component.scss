@@ -1,17 +1,6 @@
-:host {
-  display: block;
-  padding: 1rem 0;
-}
-
 .company-block {
   &:not(:last-child) {
     margin-bottom: 1rem;
-  }
-
-  ul {
-    margin: 0.5rem 0 0;
-    padding-left: 1rem;
-    line-height: 1.25;
   }
 }
 

@@ -6,3 +6,16 @@ a {
     text-decoration: underline;
   }
 }
+
+ul {
+  margin: 0.5rem 0 0;
+  padding-left: 1rem;
+  line-height: 1.25;
+}
+
+hr {
+  margin: 0;
+  border-width: 0.5px;
+  border-style: solid;
+  border-color: var(--dg-divider);
+}

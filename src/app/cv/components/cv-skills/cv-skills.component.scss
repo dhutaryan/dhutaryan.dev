@@ -1,0 +1,10 @@
+.skills-block {
+  &:not(:last-child) {
+    margin-bottom: 1rem;
+  }
+}
+
+ul {
+  padding-left: 0;
+  list-style-type: none;
+}

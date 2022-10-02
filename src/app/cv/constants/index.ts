@@ -1,4 +1,4 @@
-import { Experience } from '../models';
+import { Experience, Skill } from '../models';
 
 export const EXPERIENCE: Experience[] = [
   {
@@ -87,5 +87,35 @@ export const EXPERIENCE: Experience[] = [
     to: 'Present',
     responsibilities: [],
     order: 6,
+  },
+];
+
+export const SKILLS: Skill[] = [
+  {
+    category: 'Programming',
+    names: ['TypeScript', 'JavaScript', 'HTML', 'CSS', 'SASS/SCSS'],
+  },
+  {
+    category: 'Frameworks / Libraries',
+    names: [
+      'Angular',
+      'Angular material',
+      'NestJS',
+      'ReactJS',
+      'RxJs',
+      'NgXS / Redux',
+    ],
+  },
+  {
+    category: 'Tools / Utilities',
+    names: ['Git', 'VS Code', 'Docker', 'Jenkins', 'JIRA', 'TFS'],
+  },
+  {
+    category: 'Serverless',
+    names: ['Firebase/Firestore', 'Cognito'],
+  },
+  {
+    category: 'Databases',
+    names: ['MongoDB', 'PostgreSQL'],
   },
 ];
