@@ -1,4 +1,4 @@
-import { Experience, Skill } from '../models';
+import { Education, Experience, Skill } from '../models';
 
 export const EXPERIENCE: Experience[] = [
   {
@@ -117,5 +117,14 @@ export const SKILLS: Skill[] = [
   {
     category: 'Databases',
     names: ['MongoDB', 'PostgreSQL'],
+  },
+];
+
+export const EDUCATION: Education[] = [
+  {
+    institution: 'Belarusian National Technical University',
+    speciality: 'Automation of Technological Processes and Production',
+    from: 2009,
+    to: 2014,
   },
 ];

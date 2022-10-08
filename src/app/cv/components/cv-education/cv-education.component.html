@@ -1,0 +1,9 @@
+<h6 class="dg-section-header">Education</h6>
+
+<ng-template ngFor let-item [ngForOf]="education">
+  <div fxLayout="column">
+    <h6>{{ item.institution }}</h6>
+    <span>{{ item.speciality }}</span>
+    <span class="dg-secondary-text">{{ item.from }} - {{ item.to }}</span>
+  </div>
+</ng-template>

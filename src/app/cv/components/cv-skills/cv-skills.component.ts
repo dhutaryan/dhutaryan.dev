@@ -9,5 +9,5 @@ import { Skill } from '../../models';
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class CvSkillsComponent {
-  @Input() skills: Skill[] | null;
+  @Input() public skills: Skill[] | null;
 }

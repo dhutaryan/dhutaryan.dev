@@ -1,8 +1,8 @@
 import { Injectable } from '@angular/core';
 import { map, Observable, of } from 'rxjs';
 
-import { Experience, Skill } from './models';
-import { EXPERIENCE, SKILLS } from './constants';
+import { Education, Experience, Skill } from './models';
+import { EDUCATION, EXPERIENCE, SKILLS } from './constants';
 
 @Injectable({ providedIn: 'root' })
 export class CvService {
@@ -14,5 +14,9 @@ export class CvService {
 
   public skills(): Observable<Skill[]> {
     return of(SKILLS);
+  }
+
+  public education(): Observable<Education[]> {
+    return of(EDUCATION);
   }
 }
