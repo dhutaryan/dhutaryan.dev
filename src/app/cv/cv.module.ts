@@ -8,6 +8,7 @@ import { CvHeaderComponent } from './components/cv-header';
 import { CvExperienceComponent } from './components/cv-experience';
 import { CvSkillsComponent } from './components/cv-skills/cv-skills.component';
 import { CvEducationComponent } from './components/cv-education/cv-education.component';
+import { CvSummaryComponent } from './components/cv-summary/cv-summary.component';
 
 @NgModule({
   declarations: [
@@ -16,6 +17,7 @@ import { CvEducationComponent } from './components/cv-education/cv-education.com
     CvExperienceComponent,
     CvSkillsComponent,
     CvEducationComponent,
+    CvSummaryComponent,
   ],
   imports: [CommonModule, FlexLayoutModule, CvRoutingModule],
 })
