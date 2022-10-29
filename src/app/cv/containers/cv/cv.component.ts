@@ -1,4 +1,4 @@
-import { ChangeDetectionStrategy, Component } from '@angular/core';
+import { ChangeDetectionStrategy, Component, ElementRef } from '@angular/core';
 import { Observable } from 'rxjs';
 
 import { CvService } from '../../cv.service';
@@ -15,5 +15,13 @@ export class CvComponent {
   public skills$: Observable<Skill[]> = this.cvService.skills();
   public education$: Observable<Education[]> = this.cvService.education();
 
-  constructor(private readonly cvService: CvService) {}
+  constructor(
+    private readonly cvService: CvService,
+    private readonly elementRef: ElementRef<HTMLElement>,
+  ) {}
+
+  onGeneratePdf() {
+    const element = this.elementRef.nativeElement;
+    this.cvService.generateCvPdf(element);
+  }
 }

@@ -24,6 +24,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
+            "allowedCommonJsDependencies": [ "core-js", "rgbcolor", "raf", "html2pdf.js"],
             "outputPath": "dist/dgutoryan",
             "index": "src/index.html",
             "main": "src/main.ts",

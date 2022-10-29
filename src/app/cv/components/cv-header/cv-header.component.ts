@@ -1,4 +1,9 @@
-import { ChangeDetectionStrategy, Component } from '@angular/core';
+import {
+  ChangeDetectionStrategy,
+  Component,
+  EventEmitter,
+  Output,
+} from '@angular/core';
 
 @Component({
   selector: 'dg-cv-header',
@@ -7,5 +12,7 @@ import { ChangeDetectionStrategy, Component } from '@angular/core';
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class CvHeaderComponent {
+  @Output() generatePdf = new EventEmitter<void>();
+
   public email = 'dmitry.gutoryan@gmail.com';
 }
