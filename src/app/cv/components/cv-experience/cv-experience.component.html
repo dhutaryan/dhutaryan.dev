@@ -3,8 +3,8 @@
 <ng-template ngFor let-experience [ngForOf]="experience">
   <div class="company-block">
     <h6>
-      {{ experience.companyName }} /
-      <span class="position">{{ experience.role }}</span>
+      {{ experience.role }}
+      <span class="company-name">/ {{ experience.companyName }}</span>
     </h6>
     <span class="work-dates">{{ experience.from }} - {{ experience.to }}</span>
     <ul>
