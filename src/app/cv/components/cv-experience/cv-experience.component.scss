@@ -15,3 +15,19 @@
 .work-dates {
   font-size: 0.875rem;
 }
+
+.section-title {
+  margin-top: 0.5rem;
+  font-size: 0.875rem;
+  font-weight: 600;
+}
+
+.accomplishments-list {
+  padding-left: 0;
+  list-style-type: none;
+}
+
+.accomplishments-list li:before {
+  margin-right: 0.25rem;
+  content: '✓';
+}

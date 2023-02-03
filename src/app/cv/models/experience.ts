@@ -4,5 +4,6 @@ export interface Experience {
   readonly from: string;
   readonly to: string;
   readonly responsibilities: string[];
+  readonly accomplishments?: string[];
   readonly order: number;
 }

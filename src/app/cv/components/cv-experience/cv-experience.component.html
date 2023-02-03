@@ -7,6 +7,20 @@
       <span class="company-name">/ {{ experience.companyName }}</span>
     </h6>
     <span class="work-dates">{{ experience.from }} - {{ experience.to }}</span>
+    <ng-template [ngIf]="experience.accomplishments?.length">
+      <h6 class="section-title">Accomplishments</h6>
+    </ng-template>
+    <ul class="accomplishments-list">
+      <ng-template
+        ngFor
+        let-accomplishment
+        [ngForOf]="experience.accomplishments"
+      >
+        <li>{{ accomplishment }}</li>
+      </ng-template>
+    </ul>
+
+    <h6 class="section-title">Responsibilities</h6>
     <ul>
       <ng-template
         ngFor
