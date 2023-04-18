@@ -14,5 +14,5 @@ import {
 export class CvHeaderComponent {
   @Output() generatePdf = new EventEmitter<void>();
 
-  public email = 'dmitry.gutoryan@gmail.com';
+  public email = 'dzmitry.hutaryan@gmail.com';
 }
