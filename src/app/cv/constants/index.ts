@@ -86,15 +86,15 @@ export const SKILLS: Skill[] = [
     names: [
       'Angular',
       'Angular material',
-      'NestJS',
       'ReactJS',
+      'NestJS',
       'RxJs',
       'NgXS / Redux',
+      'styled-components',
+      'Tailwind',
+      'Bootstrap',
+      'Storybook',
     ],
-  },
-  {
-    category: 'Tools / Utilities',
-    names: ['Git', 'VS Code', 'Docker', 'Jenkins', 'JIRA', 'TFS'],
   },
   {
     category: 'Serverless',
@@ -103,6 +103,10 @@ export const SKILLS: Skill[] = [
   {
     category: 'Databases',
     names: ['MongoDB', 'PostgreSQL'],
+  },
+  {
+    category: 'Tools / Utilities',
+    names: ['Figma', 'Git', 'VS Code', 'Docker', 'Jenkins', 'JIRA'],
   },
 ];
 
