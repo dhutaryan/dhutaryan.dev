@@ -112,7 +112,10 @@ export const SKILLS: Skill[] = [
 
 export const LANGUAGES: Skill[] = [
   {
-    names: ['English - B2', 'Belarusian/Russian - Native'],
+    names: [
+      '<strong>English</strong> - B2',
+      '<strong>Belarusian/Russian</strong> - Native',
+    ],
   },
 ];
 

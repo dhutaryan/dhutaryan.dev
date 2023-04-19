@@ -7,7 +7,7 @@
     </ng-template>
     <ul>
       <ng-template ngFor let-skillName [ngForOf]="skill.names">
-        <li>{{ skillName }}</li>
+        <li [innerHTML]="skillName"></li>
       </ng-template>
     </ul>
   </div>
