@@ -1,8 +1,10 @@
-<h6 class="dg-section-header">Skills</h6>
+<h6 class="dg-section-header">{{ title }}</h6>
 
 <ng-template ngFor let-skill [ngForOf]="skills">
   <div class="skills-block">
-    <h6>{{ skill.category }}</h6>
+    <ng-template [ngIf]="skill.category">
+      <h6>{{ skill.category }}</h6>
+    </ng-template>
     <ul>
       <ng-template ngFor let-skillName [ngForOf]="skill.names">
         <li>{{ skillName }}</li>

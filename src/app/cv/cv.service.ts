@@ -3,7 +3,7 @@ import { map, Observable, of } from 'rxjs';
 import * as html2pdf from 'html2pdf.js';
 
 import { Education, Experience, Skill } from './models';
-import { EDUCATION, EXPERIENCE, SKILLS } from './constants';
+import { EDUCATION, EXPERIENCE, LANGUAGES, SKILLS } from './constants';
 
 @Injectable({ providedIn: 'root' })
 export class CvService {
@@ -15,6 +15,10 @@ export class CvService {
 
   public skills(): Observable<Skill[]> {
     return of(SKILLS);
+  }
+
+  public languages(): Observable<Skill[]> {
+    return of(LANGUAGES);
   }
 
   public education(): Observable<Education[]> {

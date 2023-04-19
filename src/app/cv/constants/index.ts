@@ -110,6 +110,12 @@ export const SKILLS: Skill[] = [
   },
 ];
 
+export const LANGUAGES: Skill[] = [
+  {
+    names: ['English - B2', 'Belarusian/Russian - Native'],
+  },
+];
+
 export const EDUCATION: Education[] = [
   {
     institution: 'Belarusian National Technical University',

@@ -9,7 +9,13 @@
   fxLayout.lt-md="column"
   fxLayoutGap="2rem"
 >
-  <dg-cv-skills fxFlex="30%" [skills]="skills$ | async"></dg-cv-skills>
+  <div fxLayout="column" fxLayoutGap="2rem" fxFlex="30%">
+    <dg-cv-skills title="Skills" [skills]="skills$ | async"></dg-cv-skills>
+    <dg-cv-skills
+      title="Languages"
+      [skills]="languages$ | async"
+    ></dg-cv-skills>
+  </div>
   <hr />
   <div fxLayout="column" fxLayoutGap="1rem">
     <dg-cv-experience [experience]="experience$ | async"></dg-cv-experience>

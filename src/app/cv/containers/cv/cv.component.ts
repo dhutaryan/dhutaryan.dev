@@ -13,6 +13,7 @@ import { Education, Experience, Skill } from '../../models';
 export class CvComponent {
   public experience$: Observable<Experience[]> = this.cvService.experience();
   public skills$: Observable<Skill[]> = this.cvService.skills();
+  public languages$: Observable<Skill[]> = this.cvService.languages();
   public education$: Observable<Education[]> = this.cvService.education();
 
   constructor(
