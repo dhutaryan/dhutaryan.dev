@@ -2,6 +2,7 @@ import { styled } from '@macaron-css/react'
 
 import { theme } from '../shared/config/theme/theme'
 import './styles/index.scss'
+import { Pages } from '../pages'
 
 const Container = styled('div', {
   base: {
@@ -10,5 +11,9 @@ const Container = styled('div', {
 })
 
 export const App = () => {
-  return <Container>App</Container>
+  return (
+    <Container>
+      <Pages />
+    </Container>
+  )
 }
