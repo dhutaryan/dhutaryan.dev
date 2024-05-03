@@ -6,6 +6,7 @@ import { Pages } from '../pages'
 
 const Container = styled('div', {
   base: {
+    height: '100%',
     color: theme.color.text.default,
   },
 })
