@@ -5,5 +5,8 @@ export const theme = createGlobalTheme(':root', {
     text: {
       default: '#333333',
     },
+    primary: {
+      default: '#3c93ca',
+    },
   },
 })

@@ -1,8 +1,8 @@
 import { styled } from '@macaron-css/react'
 
 import { theme } from '../shared/config/theme/theme'
-import './styles/index.scss'
 import { Pages } from '../pages'
+import './styles'
 
 const Container = styled('div', {
   base: {
