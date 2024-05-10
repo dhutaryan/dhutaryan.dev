@@ -1,7 +1,7 @@
 import { PropsWithChildren } from 'react'
 import { styled } from '@macaron-css/react'
 
-const Container = styled('div', {
+const Container = styled('main', {
   base: {
     display: 'flex',
     flexDirection: 'column',

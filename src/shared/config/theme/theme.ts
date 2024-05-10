@@ -9,4 +9,7 @@ export const theme = createGlobalTheme(':root', {
       default: '#3c93ca',
     },
   },
+  border: {
+    divider: '#eeeeee',
+  },
 })
