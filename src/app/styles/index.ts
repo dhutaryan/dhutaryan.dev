@@ -48,3 +48,7 @@ globalStyle('h5', {
 globalStyle('h6', {
   fontSize: '1rem',
 })
+
+globalStyle('p', {
+  margin: 0,
+})
