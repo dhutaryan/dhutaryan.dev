@@ -2,9 +2,10 @@ import { styled } from '@macaron-css/react'
 
 import { theme } from '../shared/config/theme/theme'
 import { Pages } from '../pages'
+import { Flex } from '../shared/ui'
 import './styles'
 
-const Container = styled('div', {
+const Container = styled(Flex, {
   base: {
     height: '100%',
     color: theme.color.text.default,
@@ -13,7 +14,7 @@ const Container = styled('div', {
 
 export const App = () => {
   return (
-    <Container>
+    <Container direction="column">
       <Pages />
     </Container>
   )

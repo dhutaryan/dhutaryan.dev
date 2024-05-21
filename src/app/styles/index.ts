@@ -52,3 +52,7 @@ globalStyle('h6', {
 globalStyle('p', {
   margin: 0,
 })
+
+globalStyle('ul', {
+  margin: 0,
+})
