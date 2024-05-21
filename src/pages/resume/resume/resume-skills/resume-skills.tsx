@@ -1,8 +1,10 @@
 import { styled } from '@macaron-css/react'
+
 import { ResumeSection } from '../../../../entities/resume'
 import { Flex } from '../../../../shared/ui'
+import { Skill } from '../../types'
 
-const SKILLS = [
+const SKILLS: Skill[] = [
   {
     category: 'Programming',
     names: ['TypeScript', 'JavaScript', 'HTML', 'CSS', 'SASS/SCSS'],

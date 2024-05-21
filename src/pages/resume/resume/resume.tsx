@@ -6,7 +6,6 @@ import { ResumeSummary } from './resume-summary'
 import { ResumeSkills } from './resume-skills'
 import { ResumeExperience } from './resume-experience'
 import { Breakpoints } from '../../../shared/config'
-import { ChangeEvent } from 'react'
 
 const Container = styled('div', {
   base: {
