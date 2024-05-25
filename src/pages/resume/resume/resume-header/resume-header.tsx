@@ -52,7 +52,7 @@ export const ResumeHeader = () => {
 
       <InfoContainer>
         <Link href={'mailto:' + email}>{email}</Link>
-        <Flex gap="0.5rem" alignSelf="end">
+        <Flex gap="0.5rem" alignSelf="flex-end">
           <SocialLink
             href="https://www.linkedin.com/in/dzmitry-hutaryan/"
             target="_blank"

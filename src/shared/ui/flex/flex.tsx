@@ -5,12 +5,14 @@ import { assignInlineVars } from '@macaron-css/core/dynamic'
 
 const gapVar = createVar()
 const justifyContentVar = createVar()
+const alignSelfVar = createVar()
 
 const Container = styled('div', {
   base: {
     display: 'flex',
     gap: fallbackVar(gapVar, '0'),
     justifyContent: fallbackVar(justifyContentVar, 'initial'),
+    alignSelf: fallbackVar(alignSelfVar, 'initial'),
   },
   variants: {
     direction: {
@@ -21,30 +23,9 @@ const Container = styled('div', {
         flexDirection: 'column',
       },
     },
-    alignSelf: {
-      baseline: {
-        alignSelf: 'baseline',
-      },
-      stretch: {
-        alignSelf: 'stretch',
-      },
-      start: {
-        alignSelf: 'flex-start',
-      },
-      center: {
-        alignSelf: 'center',
-      },
-      end: {
-        alignSelf: 'flex-end',
-      },
-      initial: {
-        alignSelf: 'initial',
-      },
-    },
   },
   defaultVariants: {
     direction: 'row',
-    alignSelf: 'initial',
   },
 })
 
@@ -58,7 +39,13 @@ type FlexProps = {
     | 'space-around'
     | 'space-evenly'
     | 'initial'
-  alignSelf?: 'baseline' | 'stretch' | 'start' | 'center' | 'end' | 'initial'
+  alignSelf?:
+    | 'baseline'
+    | 'stretch'
+    | 'flex-start'
+    | 'center'
+    | 'flex-end'
+    | 'initial'
   gap?: string
 }
 
@@ -66,6 +53,7 @@ export const Flex = ({
   children,
   gap,
   justifyContent,
+  alignSelf,
   ...props
 }: PropsWithChildren<FlexProps>) => {
   return (
@@ -73,6 +61,7 @@ export const Flex = ({
       style={assignInlineVars({
         [gapVar]: gap || '0',
         [justifyContentVar]: justifyContent || 'initial',
+        [alignSelfVar]: alignSelf || 'initial',
       })}
       {...props}
     >
