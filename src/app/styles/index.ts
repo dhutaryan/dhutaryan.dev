@@ -23,6 +23,7 @@ globalStyle('body', {
 
 globalStyle('h1, h2, h3, h4, h5, h6', {
   margin: 0,
+  fontWeight: '600',
 })
 
 globalStyle('h1', {
@@ -34,19 +35,19 @@ globalStyle('h2', {
 })
 
 globalStyle('h3', {
-  fontSize: '1.75rem',
-})
-
-globalStyle('h4', {
   fontSize: '1.5rem',
 })
 
-globalStyle('h5', {
+globalStyle('h4', {
   fontSize: '1.25rem',
 })
 
-globalStyle('h6', {
+globalStyle('h5', {
   fontSize: '1rem',
+})
+
+globalStyle('h6', {
+  fontSize: '0.875rem',
 })
 
 globalStyle('p', {
@@ -54,5 +55,7 @@ globalStyle('p', {
 })
 
 globalStyle('ul', {
-  margin: 0,
+  margin: '0.5rem 0 0',
+  paddingLeft: '1rem',
+  lineHeight: 1.25,
 })

@@ -42,8 +42,7 @@ type Props = {
   className?: string
 }
 
-const SkillsHeader = styled('h6', {})
-
+const SkillsHeader = styled('h5', {})
 const SkillsList = styled('ul', {
   base: {
     paddingLeft: 0,

@@ -39,6 +39,12 @@ const ResumeSkillsContainer = styled(ResumeSkills, {
   },
 })
 
+const ResumeExperienceContainer = styled(ResumeExperience, {
+  base: {
+    width: '100%',
+  },
+})
+
 export const Resume = () => {
   return (
     <Container>
@@ -49,7 +55,7 @@ export const Resume = () => {
       <ContentContainer>
         <ResumeSkillsContainer />
         <Divider />
-        <ResumeExperience />
+        <ResumeExperienceContainer />
       </ContentContainer>
     </Container>
   )

@@ -10,7 +10,7 @@ type Props = {
 
 const Container = styled('div', {})
 
-const Title = styled('h6', {
+const Title = styled('h5', {
   base: {
     marginBottom: '1rem',
     color: theme.color.primary.default,

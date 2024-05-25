@@ -1,4 +1,4 @@
 export type Skill = {
-  category: string
-  names: string[]
+  readonly category: string
+  readonly names: string[]
 }

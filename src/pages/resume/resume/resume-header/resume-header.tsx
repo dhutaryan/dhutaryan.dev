@@ -17,7 +17,7 @@ const Title = styled('h2', {
   },
 })
 
-const SubTitle = styled('h6', {
+const SubTitle = styled('h5', {
   base: {
     textTransform: 'uppercase',
   },
