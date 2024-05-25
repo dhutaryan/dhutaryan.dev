@@ -42,7 +42,7 @@ const SocialLink = styled('a', {
 
 const email = 'dzmitry.hutaryan@gmail.com'
 
-export const ResumeHeader = () => {
+export const Header = () => {
   return (
     <Container>
       <Flex direction="column">

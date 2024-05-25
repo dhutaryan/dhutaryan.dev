@@ -1,8 +1,8 @@
 import { ResumeLayout } from '../layouts'
-import { Resume } from './resume'
+import { ResumePage } from './resume'
 
 export const Pages = () => (
   <ResumeLayout>
-    <Resume />
+    <ResumePage />
   </ResumeLayout>
 )

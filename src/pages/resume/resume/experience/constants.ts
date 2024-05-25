@@ -1,9 +1,6 @@
-import { ResumeSection } from '../../../../entities/resume'
-import { Flex } from '../../../../shared/ui'
 import { CompanyExpertise } from '../../types'
-import { CompanyExperience } from './company-experience'
 
-const experience: CompanyExpertise[] = [
+export const EXPERIENCE: CompanyExpertise[] = [
   {
     name: 'Sigli',
     role: 'Front-End developer',
@@ -73,22 +70,3 @@ const experience: CompanyExpertise[] = [
     ],
   },
 ]
-
-type Props = {
-  className?: string
-}
-
-export const ResumeExperience = ({ className }: Props) => {
-  return (
-    <ResumeSection className={className} title="Experience">
-      <Flex direction="column" gap="1.25rem">
-        {experience.map((company) => (
-          <CompanyExperience
-            key={company.from + company.to}
-            company={company}
-          />
-        ))}
-      </Flex>
-    </ResumeSection>
-  )
-}

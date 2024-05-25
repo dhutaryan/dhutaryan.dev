@@ -4,7 +4,7 @@ import { ResumeSection } from '../../../../entities/resume'
 
 const Content = styled('p', {})
 
-export const ResumeSummary = () => {
+export const Summary = () => {
   return (
     <ResumeSection title="Summary">
       <Content>

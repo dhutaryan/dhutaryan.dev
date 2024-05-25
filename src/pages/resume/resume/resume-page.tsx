@@ -1,10 +1,10 @@
 import { styled } from '@macaron-css/react'
 
-import { ResumeHeader } from './resume-header'
+import { Header } from './header'
 import { Divider } from '../../../shared/ui'
-import { ResumeSummary } from './resume-summary'
-import { ResumeSkills } from './resume-skills'
-import { ResumeExperience } from './resume-experience'
+import { Summary } from './summary'
+import { Skills } from './skills'
+import { Experience } from './experience'
 import { Breakpoints } from '../../../shared/config'
 
 const Container = styled('div', {
@@ -27,7 +27,7 @@ const ContentContainer = styled('div', {
   },
 })
 
-const ResumeSkillsContainer = styled(ResumeSkills, {
+const SkillsContainer = styled(Skills, {
   base: {
     flex: '1 1 100%',
     maxWidth: '30%',
@@ -39,23 +39,23 @@ const ResumeSkillsContainer = styled(ResumeSkills, {
   },
 })
 
-const ResumeExperienceContainer = styled(ResumeExperience, {
+const ExperienceContainer = styled(Experience, {
   base: {
     width: '100%',
   },
 })
 
-export const Resume = () => {
+export const ResumePage = () => {
   return (
     <Container>
-      <ResumeHeader />
+      <Header />
       <Divider />
-      <ResumeSummary />
+      <Summary />
       <Divider />
       <ContentContainer>
-        <ResumeSkillsContainer />
+        <SkillsContainer />
         <Divider />
-        <ResumeExperienceContainer />
+        <ExperienceContainer />
       </ContentContainer>
     </Container>
   )
