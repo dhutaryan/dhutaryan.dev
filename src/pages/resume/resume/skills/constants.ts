@@ -1,4 +1,4 @@
-import { Skill } from '../../types'
+import { Skill } from '../../../../shared/types'
 
 export const SKILLS: Skill[] = [
   {

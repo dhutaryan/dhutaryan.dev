@@ -1,4 +1,4 @@
-import { CompanyExpertise } from '../../types'
+import { CompanyExpertise } from '../../../../shared/types'
 
 export const EXPERIENCE: CompanyExpertise[] = [
   {
