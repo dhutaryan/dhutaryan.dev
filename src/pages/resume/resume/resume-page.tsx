@@ -1,11 +1,12 @@
 import { styled } from '@macaron-css/react'
 
 import { Header } from './header'
-import { Divider } from '../../../shared/ui'
+import { Divider, Flex } from '../../../shared/ui'
 import { Summary } from './summary'
 import { Skills } from './skills'
 import { Experience } from './experience'
 import { Breakpoints } from '../../../shared/config'
+import { Languages } from './languages'
 
 const Container = styled('div', {
   base: {
@@ -27,7 +28,7 @@ const ContentContainer = styled('div', {
   },
 })
 
-const SkillsContainer = styled(Skills, {
+const LeftContainer = styled(Flex, {
   base: {
     flex: '1 1 100%',
     maxWidth: '30%',
@@ -53,7 +54,11 @@ export const ResumePage = () => {
       <Summary />
       <Divider />
       <ContentContainer>
-        <SkillsContainer />
+        <LeftContainer direction="column" gap="1rem">
+          <Skills />
+          <Divider />
+          <Languages />
+        </LeftContainer>
         <Divider />
         <ExperienceContainer />
       </ContentContainer>
