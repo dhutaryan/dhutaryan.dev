@@ -1,3 +1,4 @@
+import { useRef } from 'react'
 import { styled } from '@macaron-css/react'
 
 import { Header } from './header'
@@ -48,9 +49,25 @@ const RightContainer = styled(Flex, {
 })
 
 export const ResumePage = () => {
+  const element = useRef(null)
+
+  const onGeneratePdf = async () => {
+    const html2pdf = (await import('html2pdf.js')).default
+
+    const options = {
+      filename: 'Dzmitry_Hutaryan_Frontend_Resume.pdf',
+      margin: 8,
+      jsPDF: { unit: 'mm', format: 'A4', orientation: 'portrait' },
+      html2canvas: { dpi: 300, letterRendering: true },
+      pagebreak: { mode: ['avoid-all', 'css'] },
+    }
+
+    html2pdf().from(element.current).set(options).save()
+  }
+
   return (
-    <Container>
-      <Header />
+    <Container ref={element}>
+      <Header generatePdf={onGeneratePdf} />
       <Divider />
       <Summary />
       <Divider />

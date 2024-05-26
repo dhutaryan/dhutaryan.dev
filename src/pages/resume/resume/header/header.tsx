@@ -3,6 +3,10 @@ import { styled } from '@macaron-css/react'
 import { theme } from '../../../../shared/config/theme/theme'
 import { Flex, Icon, Link } from '../../../../shared/ui'
 
+type Props = {
+  generatePdf: () => void
+}
+
 const Container = styled('header', {
   base: {
     display: 'flex',
@@ -40,13 +44,23 @@ const SocialLink = styled('a', {
   },
 })
 
+const PdfIcon = styled(Icon, {
+  base: {
+    marginLeft: '0.25rem',
+    cursor: 'pointer',
+  },
+})
+
 const email = 'dzmitry.hutaryan@gmail.com'
 
-export const Header = () => {
+export const Header = ({ generatePdf }: Props) => {
   return (
     <Container>
       <Flex direction="column">
-        <Title>Dzmitry Hutaryan</Title>
+        <Title>
+          Dzmitry Hutaryan
+          <PdfIcon icon="pdfFile" ignoreForPdf={true} onClick={generatePdf} />
+        </Title>
         <SubTitle>Front-end Developer</SubTitle>
       </Flex>
 
@@ -57,10 +71,10 @@ export const Header = () => {
             href="https://www.linkedin.com/in/dzmitry-hutaryan/"
             target="_blank"
           >
-            <Icon icon="linkedin" size={32} />
+            <Icon icon="linkedin" size={32} ignoreForPdf={true} />
           </SocialLink>
           <SocialLink href="https://github.com/dhutaryan" target="_blank">
-            <Icon icon="github" size={32} />
+            <Icon icon="github" size={32} ignoreForPdf={true} />
           </SocialLink>
         </Flex>
       </InfoContainer>
