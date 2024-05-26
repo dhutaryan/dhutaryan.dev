@@ -7,6 +7,7 @@ import { Skills } from './skills'
 import { Experience } from './experience'
 import { Breakpoints } from '../../../shared/config'
 import { Languages } from './languages'
+import { Education } from './education'
 
 const Container = styled('div', {
   base: {
@@ -40,7 +41,7 @@ const LeftContainer = styled(Flex, {
   },
 })
 
-const ExperienceContainer = styled(Experience, {
+const RightContainer = styled(Flex, {
   base: {
     width: '100%',
   },
@@ -60,7 +61,11 @@ export const ResumePage = () => {
           <Languages />
         </LeftContainer>
         <Divider />
-        <ExperienceContainer />
+        <RightContainer direction="column" gap="1rem">
+          <Experience />
+          <Divider />
+          <Education />
+        </RightContainer>
       </ContentContainer>
     </Container>
   )
