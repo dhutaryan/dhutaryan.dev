@@ -1,7 +1,7 @@
 import { styled } from '@macaron-css/react'
 
 import { CompanyExpertise } from '../../../../shared/types'
-import { theme } from '../../../../shared/config'
+import { Breakpoints, theme } from '../../../../shared/config'
 import { Flex } from '../../../../shared/ui'
 import { Accomplishments } from './accomplishments'
 import { Responsibilities } from './responsibilities'
@@ -9,6 +9,16 @@ import { Responsibilities } from './responsibilities'
 type Props = {
   company: CompanyExpertise
 }
+
+const Header = styled(Flex, {
+  base: {
+    '@media': {
+      [Breakpoints['lt-md']]: {
+        flexDirection: 'column',
+      },
+    },
+  },
+})
 
 const Role = styled('h5', {})
 const Name = styled('span', {
@@ -32,14 +42,14 @@ const ListTitle = styled('h6', {
 export const CompanyExperience = ({ company }: Props) => {
   return (
     <Flex direction="column">
-      <Flex justifyContent="space-between">
+      <Header justifyContent="space-between">
         <Role>
           {company.role} <Name> / {company.name}</Name>
         </Role>
         <Dates>
           {company.from} - {company.to}
         </Dates>
-      </Flex>
+      </Header>
       {company.accomplishments && (
         <>
           <ListTitle>Accomplishments</ListTitle>

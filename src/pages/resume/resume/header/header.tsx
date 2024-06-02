@@ -2,6 +2,7 @@ import { styled } from '@macaron-css/react'
 
 import { theme } from '../../../../shared/config/theme/theme'
 import { Flex, Icon, Link } from '../../../../shared/ui'
+import { Breakpoints } from '../../../../shared/config'
 
 type Props = {
   generatePdf: () => void
@@ -12,6 +13,12 @@ const Container = styled('header', {
     display: 'flex',
     alignItems: 'center',
     justifyContent: 'space-between',
+    '@media': {
+      [Breakpoints['lt-md']]: {
+        flexDirection: 'column',
+        alignItems: 'initial',
+      },
+    },
   },
 })
 
