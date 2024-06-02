@@ -1,6 +1,6 @@
 import { styled } from '@macaron-css/react'
 
-import { CompanyExpertise } from '../../types'
+import { CompanyExpertise } from '../../../../shared/types'
 import { theme } from '../../../../shared/config'
 import { Flex } from '../../../../shared/ui'
 import { Accomplishments } from './accomplishments'
