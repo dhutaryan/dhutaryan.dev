@@ -78,10 +78,10 @@ export const Header = ({ generatePdf }: Props) => {
             href="https://www.linkedin.com/in/dzmitry-hutaryan/"
             target="_blank"
           >
-            <Icon icon="linkedin" size={32} ignoreForPdf={true} />
+            <Icon icon="linkedin" size={32} />
           </SocialLink>
           <SocialLink href="https://github.com/dhutaryan" target="_blank">
-            <Icon icon="github" size={32} ignoreForPdf={true} />
+            <Icon icon="github" size={32} />
           </SocialLink>
         </Flex>
       </InfoContainer>
