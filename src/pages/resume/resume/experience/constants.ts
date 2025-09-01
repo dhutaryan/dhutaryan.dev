@@ -13,7 +13,10 @@ export const EXPERIENCE: CompanyExpertise[] = [
       'Conducting architecture planning processes, reviewing the code, bug fixing',
     ],
     accomplishments: [
-      'Developed successfully UI components library from scratch to the release',
+      'Developed successfully UI components library from scratch to the release (twice)',
+      'Mentored less experienced developers',
+      'Reduced firebase requests and listeners that saved costs by 10%',
+      'Maintained and enhanced 5 projects simultaneously, delivering new features and support',
     ],
   },
   {
