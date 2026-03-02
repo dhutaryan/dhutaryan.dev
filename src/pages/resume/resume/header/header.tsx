@@ -68,7 +68,7 @@ export const Header = ({ generatePdf }: Props) => {
           Dzmitry Hutaryan
           <PdfIcon icon="pdfFile" ignoreForPdf={true} onClick={generatePdf} />
         </Title>
-        <SubTitle>Front-end Developer</SubTitle>
+        <SubTitle>Frontend Engineer</SubTitle>
       </Flex>
 
       <InfoContainer>
