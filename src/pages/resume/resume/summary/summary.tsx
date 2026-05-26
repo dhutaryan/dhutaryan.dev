@@ -17,12 +17,19 @@ export const Summary = () => {
           target="_blank"
         >
           ngx-mat-timepicker
-        </Link>
-        . Worked as a QA Automation engineer. Now focusing on Angular and
-        Angular ecosystem but also have vast knowledge of React. Worked in
-        different teams from 3 to 40 people. I have had projects in different
-        domains such as e-commerce (with blockchain), medicine, travel,
-        intranet, logistic, non-commercial.
+        </Link>{' '}
+        (
+        <Link
+          href="https://github.com/angular/components/pull/29806"
+          target="_blank"
+        >
+          mentioned
+        </Link>{' '}
+        by Angular team) . Worked as a QA Automation engineer. Now focusing on
+        Angular and Angular ecosystem but also hands-on React in production
+        projects. Worked in different teams from 3 to 40 people. I have had
+        projects in different domains such as e-commerce (with blockchain),
+        medicine, travel, intranet, logistic, non-commercial.
       </Content>
     </ResumeSection>
   )
